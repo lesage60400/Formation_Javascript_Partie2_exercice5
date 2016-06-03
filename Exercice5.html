@@ -6,27 +6,15 @@
   </head>
   <body>
     <div class="conteneur">
-      <img src="images/image1.jpg" onmouseover="imgswitch1()" id="image1" />
-      <img src="images/image2.jpg" onmouseover="imgswitch2()" id="image2" />
-      <img src="images/image3.jpg" onmouseover="imgswitch3()" id="image3" />
-      <img src="images/image4.jpg" onmouseover="imgswitch4()" id="image4" />
-      <img src="images/image5.jpg" onmouseover="imgswitch5()"id="image5" />
+      <img src="images/image1.jpg" onmouseover="imgswitch('image1')" id="image1" />
+      <img src="images/image2.jpg" onmouseover="imgswitch('image2')" id="image2" />
+      <img src="images/image3.jpg" onmouseover="imgswitch('image3')" id="image3" />
+      <img src="images/image4.jpg" onmouseover="imgswitch('image4')" id="image4" />
+      <img src="images/image5.jpg" onmouseover="imgswitch('image5')" id="image5" />
     </div>
     <script>
-    function imgswitch1(){
-      document.getElementById('image1').src="images/image1_2.jpg"
-    }
-    function imgswitch2(){
-      document.getElementById('image2').src="images/image2_2.jpg"
-    }
-    function imgswitch3(){
-      document.getElementById('image3').src="images/image3_2.jpg"
-    }
-    function imgswitch4(){
-      document.getElementById('image4').src="images/image4_2.jpg"
-      }
-      function imgswitch5(){
-      document.getElementById('image5').src="images/image5_2.jpg"
+    function imgswitch(x){
+      document.getElementById(x).src = "images/"+x+"_2.jpg";
     }
     </script>
   </body>
